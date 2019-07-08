@@ -98,7 +98,22 @@ console.log(ticketPriceTotal);
 // one or many of the array methods listed above.
 
 // Problem 1
+let badCompany = runners.filter(function (company) {
+    return company.company_name === "Mycat"
+});
+console.log(badCompany);
 
 // Problem 2
+let tenPercentDonation = runners.reduce(function (total, percentD) {
+    return total + percentD.donation;
+}, 0);
+console.log(tenPercentDonation);
 
 // Problem 3
+
+let evenNumbers = runners.filter(function (even) {
+  
+    return even.id % 2 !== 0;
+
+});
+console.log(evenNumbers);

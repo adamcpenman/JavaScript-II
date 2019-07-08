@@ -60,13 +60,21 @@ function multiplyNums(x, y, cb) {
   return cb(x,y);
 }
 function multiply(x,y) {
-  return x + y;
+  return x * y;
 }
+console.log(multiply(3,2));
 
 function contains(item, list, cb) {
-  // contains checks if an item is present inside of the given array/list.
-  // Pass true to the callback if it is, otherwise pass false.
+let it = ()=>{for (let i = 0; i < list.length; i++) {
+  return list[i]===item  ? true :false;
+}}
+ return cb(it())
 }
+contains('Pencil',items,(list)=>{console.log(list)})
+  // contains checks if an item is present inside of the given array/list.
+
+  // Pass true to the callback if it is, otherwise pass false.
+
 
 /* STRETCH PROBLEM */
 
