@@ -1,7 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function ladyGagaAlbums() {
+  let album1= "The Fame";
+  console.log(`${album1} is Lady Gaga's first album.`);
 
+    function gaga2() {
+      let album2 = "Fame Monster";
+      console.log(`${album2} is Lady Gaga's second album.`);
 
+        function gaga3() {
+          let album3 = "Born This Way";
+          console.log(`${album3} is Lady Gaga's third album and most popular.`);
+          }
+        gaga3();
+      }
+  gaga2();
+  }
+ladyGagaAlbums();
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
